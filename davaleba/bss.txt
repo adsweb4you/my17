@@ -1,0 +1,10 @@
+1) შემოგვაქვს bootstrap კომპონენტები 
+
+ -- navbar
+ -- carusel
+ -- modal
+ -- Collapse
+ -- Dropdowns
+ -- Forms
+
+ ყველა კომპონენტი გამოიეყენეთ container კლასის შიგნით 

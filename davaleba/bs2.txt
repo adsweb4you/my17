@@ -1,0 +1,2 @@
+https://tutorialzine.com/media/2017/01/1-basic-grid.png
+https://freefrontend.com/assets/img/bootstrap-grid-examples/bootstrap-4-grid-view-container-with-font-awesome.jpg

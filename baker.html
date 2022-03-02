@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/" type="image/x-icon">
+   <style>
+     *{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #261C2C;
+    margin: 0;
+}
+.navfull{
+    background-color: #3E2C41;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.navfulloff{
+    transform: translateX(-100%);
+}
+.navfull-a{
+    text-decoration: none;
+    padding: 25px 12.5px;
+    color: white;
+}
+.navminiopenclose{
+    background-color: #3E2C41;
+    position: absolute;
+    padding: 25px 0;
+    display: block; 
+    width: 100%;
+    top: 0;
+}
+.navminiopencloseoff{
+    transform: translateX(-100%);
+}
+.navminiopencloseico{
+    font-size: 25px;
+    color: white;
+}
+.navminiopenoff{
+    transform: translateX(-100%);
+}
+.navminiopen{
+    background-color: #3E2C41;
+    position: absolute;
+    padding: 25px;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    top: 79px;
+}
+.navmini-li{
+    text-decoration: none;
+    padding: 25px 0;
+    color: white;
+    display: block;
+}
+.navmini-a{
+    text-decoration: none;
+    color: white;
+}
+   </style>
+
+    <title></title>
+</head>
+<body>
+    <nav class="navfull navfulloff">
+        <a href="" class="navfull-a">ABOUT</a>
+        <a href="" class="navfull-a">DEMO</a>
+        <a href="" class="navfull-a">MERCH</a>
+        <a href="" class="navfull-a">FAQ / CONTACT</a>
+    </nav>
+    <nav class="navminiopenclose navminiopencloseoff">
+      <i class="bi bi-list-ul navminiopencloseico"></i>
+    </nav>
+    <nav class="navminiopen navminiopenoff navmini">
+      <ul class="navmini-ul">
+        <li class="navmini-li"><a href="" class="navmini-a">ABOUT</a></li>
+        <li class="navmini-li"><a href="" class="navmini-a">DEMO</a></li>
+        <li class="navmini-li"><a href="" class="navmini-a">MERCH</a></li>
+        <li class="navmini-li"><a href="" class="navmini-a">FAQ / CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      let screenwidth = window.screen.availWidth;
+let navfull = document.querySelector(".navfull");
+let navfulloff = document.querySelector(".navfulloff");
+let navminiopenclose = document.querySelector(".navminiopenclose");
+let navminiopencloseico = document.querySelector(".navminiopencloseico");
+let navmini = document.querySelector(".navmini");
+ 
+
+window.addEventListener('resize', function(e){
+  screenwidth =  e.target.innerWidth
+
+  if(screenwidth >= 437){
+    navfull.classList.toggle("navfulloff");
+}
+else if(screenwidth <= 437){
+    navminiopenclose.classList.toggle("navminiopencloseoff");
+};
+navminiopencloseico.addEventListener("click", function(){
+    navmini.classList.toggle("navminiopenoff");
+});
+})
+
+ 
+    </script>
+</body>
+</html>

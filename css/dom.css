@@ -1,0 +1,87 @@
+.testLcass{
+    height: 250px;
+    border: 1px solid #000;
+}
+
+nav.side-nav{
+    position: fixed;
+    height: 100vh;
+    background-color: #212c36;
+    width: 350px;
+    transform: translateX(-100%);
+    transition: all .3s ease-in;
+}
+
+nav.side-nav.show{
+    transform: translateX(0);
+}
+
+.contents{
+    padding: 40px;
+}
+
+.contents a{
+   display: block;
+   padding: 12px;
+   text-decoration: none;
+   color: #fff;
+}
+
+.mynavbar{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    padding: 7px;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(48, 68, 241);
+}
+
+.mynavbar:lang(ka){
+    font-family: asd;
+}
+
+i{
+    color: rgb(48, 68, 241);
+}
+
+.lab i{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   right: 15px;
+}
+
+.myinputs{
+    outline: 0;
+    border: 0;
+    padding: 7px;
+}
+
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spantags{
+    display: inline-block;
+    background-color: #212529;
+    margin: 3px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mytablist.active{
+    background-color: red !important;
+}
+
+.datalstab{
+    display: none;
+}
+
+.datalstab.active{
+    display: block;
+}
